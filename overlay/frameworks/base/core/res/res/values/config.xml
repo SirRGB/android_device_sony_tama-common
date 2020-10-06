@@ -239,9 +239,6 @@
         <item>/system/lib64/libblas.so</item>
     </string-array>
 
-    <!-- Should the pinner service pin the Camera application? -->
-    <bool name="config_pinnerCameraApp">true</bool>
-
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
