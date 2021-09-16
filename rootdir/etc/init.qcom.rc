@@ -136,6 +136,13 @@ on post-fs
     # Update dm-verity state and set partition.*.verified properties
     verity_update_state
 
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-1
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on early-boot
     # ta_qmi_service use wakelock before on boot, so add permission here.
     chown radio wakelock /sys/power/wake_lock
