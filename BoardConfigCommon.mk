@@ -41,17 +41,18 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_SOURCE := kernel/sony/sdm845
 BOARD_KERNEL_SEPARATED_DTBO := true
 
-BOARD_KERNEL_CMDLINE = androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
-BOARD_KERNEL_CMDLINE += ehci-hcd.park=3
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
-BOARD_KERNEL_CMDLINE += service_locator.enable=1
-BOARD_KERNEL_CMDLINE += swiotlb=2048
-BOARD_KERNEL_CMDLINE += androidboot.configfs=true
-BOARD_KERNEL_CMDLINE += loop.max_part=7
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += panic_on_err=1
-BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=dsi_panel_cmd_display:config0
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    msm_rtb.filter=0x237 \
+    ehci-hcd.park=3 \
+    lpm_levels.sleep_disabled=1 \
+    service_locator.enable=1 \
+    swiotlb=2048 \
+    androidboot.configfs=true \
+    loop.max_part=7 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    panic_on_err=1 \
+    msm_drm.dsi_display0=dsi_panel_cmd_display:config0
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
