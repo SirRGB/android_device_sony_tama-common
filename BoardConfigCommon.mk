@@ -74,9 +74,6 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 # Camera
 MALLOC_SVELTE_FOR_LIBC32 := true
 
-# DRM
-TARGET_ENABLE_MEDIADRM_64 := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
