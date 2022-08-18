@@ -120,6 +120,7 @@ drm.service.enabled=true
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Graphics
+debug.sf.predict_hwc_composition_strategy=0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=sdm845
 ro.opengles.version=196610
