@@ -15,6 +15,8 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/sony/tama-common/tama-common-vendor.mk)
 
+TARGET_ENABLE_BLUR := true
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
